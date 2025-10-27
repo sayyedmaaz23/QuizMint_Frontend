@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the native cryptocurrency of Ethereum?",
+    "options": ["ETH", "ETC", "BTC", "SOL"],
+    "answer": "ETH"
+  },
+  {
+    "question": "Which consensus mechanism does Ethereum use after the Merge?",
+    "options": ["Proof of Work", "Proof of Stake", "Proof of Authority", "Delegated Proof"],
+    "answer": "Proof of Stake"
+  },
+  {
+    "question": "Which function modifier in Solidity restricts access to the contract owner?",
+    "options": ["restricted", "adminOnly", "onlyOwner", "isOwner"],
+    "answer": "onlyOwner"
+  },
+  {
+    "question": "Which library is commonly used for Ethereum interactions in JavaScript?",
+    "options": ["React.js", "Ethers.js", "Solana.js", "Truffle.js"],
+    "answer": "Ethers.js"
+  },
+  {
+    "question": "What does ERC in ERC-20 stand for?",
+    "options": ["Ethereum Request for Comment", "Ethereum Registration Code", "Ethereum Runtime Contract", "Ethereum Registered Coin"],
+    "answer": "Ethereum Request for Comment"
+  },
+  {
+    "question": "What is the smallest unit of Ether called?",
+    "options": ["Gwei", "Satoshi", "Wei", "Matic"],
+    "answer": "Wei"
+  },
+  {
+    "question": "Which command compiles smart contracts in Hardhat?",
+    "options": ["npx hardhat test", "npx hardhat run", "npx hardhat compile", "npx hardhat deploy"],
+    "answer": "npx hardhat compile"
+  },
+  {
+    "question": "Which keyword is used to define a new contract in Solidity?",
+    "options": ["function", "interface", "contract", "class"],
+    "answer": "contract"
+  },
+  {
+    "question": "Which of these is an NFT standard on Ethereum?",
+    "options": ["ERC-721", "ERC-20", "ERC-1155", "ERC-404"],
+    "answer": "ERC-721"
+  },
+  {
+    "question": "Who pays the gas fees for Ethereum transactions?",
+    "options": ["Miner", "Validator", "Transaction sender", "Smart contract owner"],
+    "answer": "Transaction sender"
+  }
+]
