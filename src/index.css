@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---------------- Global Styles ---------------- */
+body {
+  @apply bg-gray-900 text-gray-100 font-sans;
+  background: radial-gradient(circle at top left, #0f172a, #000);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth transitions for UI elements */
+button, a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  @apply flex justify-between items-center px-6 py-4 bg-gray-800 shadow-md;
+  background: linear-gradient(90deg, #1f2937, #111827);
+  border-bottom: 2px solid #22c55e;
+}
+
+header h1 {
+  @apply text-2xl font-bold text-green-400 tracking-wide;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  @apply px-4 py-2 rounded-lg font-semibold;
+}
+
+.btn-primary {
+  @apply bg-green-600 text-white hover:bg-green-700;
+}
+
+.btn-secondary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+/* Disable button */
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* ---------------- Cards & Panels ---------------- */
+.card {
+  @apply bg-gray-800 rounded-2xl shadow-lg p-6 transition-transform;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------------- Marketplace Layout ---------------- */
+.market-grid {
+  @apply grid gap-6 mt-8;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.market-item {
+  @apply bg-gray-800 rounded-xl shadow-lg p-4 text-center border border-gray-700 hover:border-green-500;
+  transition: all 0.2s ease-in-out;
+}
+
+.market-item img {
+  @apply rounded-lg mb-3 w-full h-40 object-cover;
+}
+
+/* ---------------- Quiz Styling ---------------- */
+.quiz-container {
+  @apply bg-gray-800 p-8 rounded-2xl shadow-lg max-w-xl mx-auto mt-10 text-center;
+}
+
+.quiz-question {
+  @apply text-lg font-semibold mb-6 text-yellow-400;
+}
+
+.quiz-option {
+  @apply bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg mb-3 block w-full;
+}
+
+.quiz-option.selected {
+  @apply bg-blue-600;
+}
+
+.quiz-option.correct {
+  @apply bg-green-600;
+}
+
+.quiz-option.wrong {
+  @apply bg-red-600;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  @apply mt-16 text-center text-gray-500 text-sm;
+  border-top: 1px solid #374151;
+  padding: 1rem 0;
+}
+
+/* ---------------- Animations ---------------- */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
