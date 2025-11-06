@@ -105,7 +105,7 @@ const MainMenu = () => {
         </button>
 
         <button
-          onClick={() => navigate("/my-assets")}
+          onClick={() => navigate("/myassets")}
           disabled={loading}
           className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-purple-400/40 transition-all duration-200"
         >
